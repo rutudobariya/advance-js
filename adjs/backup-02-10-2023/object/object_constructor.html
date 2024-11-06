@@ -1,0 +1,17 @@
+<script>
+// you need create a function and provides its arguments .Each arguments or parameters value can be assinged  in the current object by using this keyword and that method is called object by constructor.
+
+function emp(id,name,salary,age)
+{
+
+    this.id=id;
+    this.name=name;
+    this.salary=salary;
+    this.age=age;
+
+}
+
+let employee=new emp(101,"brijesh",1500,32);
+document.write(employee.id+"<br>"+employee.name+"<br>"+employee.salary+"<br>"+employee.age);
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <div id="demo"></div>
+    <script>
+        let header="This is a Header";
+        let tags=["logo","searchbox","socialmedia","account"];
+
+        let nav=`${header}<ul>`;
+
+        for(const x of tags)
+        {
+            nav+=`<li>${x}</li>`;
+        }
+        nav+=`</ul>`;
+        document.getElementById("demo").innerHTML=nav;
+    </script>
+    
+</body>
+</html>

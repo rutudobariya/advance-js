@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .header
+        {
+            width: 80% !important;
+            height: 85px !important;
+            margin-left: 10%;
+            margin-top: 10%;
+            padding: 20px !important;
+            background-color: lightcoral;
+        }
+
+        .header1
+        {
+            width: 80% !important;
+            height: 85px !important;
+            margin-left: 10%;
+            margin-top: 2%;
+            padding: 20px !important;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body id="bd">
+
+    <div></div>
+    <div></div>    
+    <div></div>
+    <div></div>
+<!-- 
+    <button type="button" id="btnClk">Click</button> -->
+<!-- 
+    <script>
+        const dv=document.querySelector("div");
+        dv.addEventListener("load",function(){
+         
+            dv.classList.add("header");
+            
+        })
+    </script> -->
+
+<!-- 
+    
+    <script>
+        const dv=document.querySelector("div");
+        const btnClk=document.querySelector("#btnClk");
+        btnClk.addEventListener("click",function(){
+         
+            // alert('hi');
+            dv.classList.add("header");
+            
+        })
+    </script> -->
+
+
+<!--     
+    
+    <script>
+        const dv=document.querySelector("div");
+        const bd=document.querySelector("#bd");
+        bd.addEventListener('click',function(){
+         
+            // alert('hi');
+            dv.classList.add("header");
+            //dv.classList.remove("header");
+        })
+    </script> -->
+
+
+    
+    
+    <script>
+        const dv=document.querySelectorAll("div");
+        const dv1=document.querySelectorAll("div");
+        dv[0].classList.add("header");  
+        dv1[1].classList.add("header1");  
+        dv1[2].classList.add("header1");  
+        dv1[3].classList.add("header1");  
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+</head>
+<body onload="display()">
+    
+<section class="content">
+    <div class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eius fugit <div class="fonts">Hi i am just checked</div> sequi assumenda accusantium quis molestiae corrupti earum reprehenderit, dolorum fugiat beatae cum iste molestias, totam labore id soluta sunt?</div>
+</section>
+<script>
+    function display()
+    {
+        const content=document.querySelector(".content");
+        const container=document.querySelector(".container");
+        const all=document.querySelectorAll(".fonts");
+        content.style.width="50%";     
+        content.style.height="auto";
+        content.style.margin="auto";   
+        content.style.padding="20px";     
+        content.style.backgroundColor="red";     
+        container.style.backgroundColor="white";     
+        container.style.margin="25px";
+        container.style.padding="25px";
+        all[0].style.backgroundColor="blue";
+        all[0].style.color="white";     
+    }
+</script>
+</body>
+</html>

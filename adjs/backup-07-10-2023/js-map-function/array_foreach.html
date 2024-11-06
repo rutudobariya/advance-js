@@ -1,0 +1,17 @@
+<p id="test"></p>
+<script>
+   let fruitsname="";
+    const fruits=["banana","apple","orange","papaya","grapes","pineapple"];
+    const listing=fruits.forEach(fruitslist);
+    // function fruitslist(listing)
+    // {
+    //     console.log(listing);
+    // }
+
+    document.getElementById("test").innerHTML=fruitsname;
+    function fruitslist(listing)
+    {
+        //console.log(listing);
+         fruitsname+="Name of fruits is :"+listing+"<br>";
+    }
+</script>

@@ -1,0 +1,30 @@
+<script>
+
+/* static class method :  we can take a static class method inside of only class 
+                          we can not access a static class method in object
+*/
+
+class Car 
+{
+    constructor(name,model)
+    {
+        this.name=name;
+        this.model=model;
+
+    }
+    static Display()
+    {
+        return "audi classic is discontinue now";
+    }
+}
+
+const myvar=new Car("audi",1970);
+
+// console.log(myvar);
+
+//access via object
+//console.log(myvar.Display());
+
+//access via class method
+console.log(Car.Display());
+</script>

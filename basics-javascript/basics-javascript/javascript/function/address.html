@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/address.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        #add 
+        {
+            width: 96%;
+            height: auto;
+            margin: 0;
+            margin-left: 1%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: lightblue;
+            padding: 25px;
+        }
+        h1{
+            text-align: center;
+            font-size: 48px;
+            letter-spacing: 2px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+ <h1>Our Resturents Locations</h1>   
+<section id="add">
+    <div class="address1">
+        <script>
+            document.write(add1());
+        </script>
+    </div>
+    <div class="address2">
+        <script>
+            document.write(add2());
+        </script>
+    </div>
+    <div class="address3">
+        <script>
+            document.write(add3());
+        </script>
+    </div>
+</section>
+
+</body>
+</html>

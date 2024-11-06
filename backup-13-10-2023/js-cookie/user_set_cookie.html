@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+      function SetCookie()
+      {
+
+        // current time 
+        // your cookie data is deleted after 1 month of period
+        var now=new Date();
+        now.setMonth(now.getMonth() -1);
+
+        if(document.frm.name.value=="")
+        {
+            alert('Please Enter your name here')
+            document.frm.name.focus();
+            return false;
+
+        }
+        else 
+        {
+            // esacpe : is a function i.e useto convert not redable formate or encode data from user input abcd.
+            cookievalue=escape(document.frm.name.value)+";";
+            document.cookie="name"+cookievalue;
+            document.write("Setting of cookie user information :" + "name"+cookievalue);
+            document.cookie="expires="+now.toUTCString()+";"
+            document.write(setCookie("cookievalue",cookievalue,365));
+
+        }
+
+      }
+
+
+
+    // delete a cookie 
+
+    </script>
+</head>
+<body>
+    <center>
+        
+        <form method="post" name="frm">
+        Enter Your Name : <input type="text" name="name" placeholder="Name *" required>
+        <br><br>
+        <form method="post" name="frm">
+        <button type="button" onclick="SetCookie()">Setname Cookie</button>
+    </form>
+    </center>
+</body>
+</html>

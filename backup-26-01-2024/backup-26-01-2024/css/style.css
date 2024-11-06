@@ -1,0 +1,28 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.list-group-item
+{
+    margin: 10px;
+    padding: 5px;
+}
+.delete
+{
+    width: auto;
+    height: auto;
+    background-color: red;
+    color: white;
+    margin-left: 1%;
+}
+.edit
+{
+    width: auto;
+    height: auto;
+    color: white;
+    margin-left: 2% !important;
+}

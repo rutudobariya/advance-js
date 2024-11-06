@@ -1,0 +1,10 @@
+
+https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/users
+
+custome hooks 
+:))
+
+fetch('url')
+.then(response => response.json())
+.then(response =>console.log(json))

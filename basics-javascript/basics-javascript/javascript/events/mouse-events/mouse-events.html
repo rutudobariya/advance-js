@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function styl()
+        {
+        document.getElementById("box").style="width:50%; height:auto; margin:auto";
+
+        document.getElementById("imgg").style="width:100%; height:300px";
+
+        }
+
+        function chng()
+        {
+            document.getElementById("imgg").src="images/1.avif";
+            document.getElementById("imgg").style="transition:2s ease all; width:100%; height:350px";
+        }
+        
+        function chng2()
+        {
+            document.getElementById("imgg").src="images/2.avif";
+            document.getElementById("imgg").style="transition:2s ease all; width:100%; height:320px";
+        }
+
+    </script>
+</head>
+<body onload="styl()">
+    <div id="box">
+        <img src="images/1.avif" id="imgg" onmouseover="chng2()" onmouseout="chng()">
+    </div>
+</body>
+</html>

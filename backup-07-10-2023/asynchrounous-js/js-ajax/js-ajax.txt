@@ -1,0 +1,16 @@
+ajax: ajax stands forn asynchrounous javascript and xml
+
+ asynchrounous : data will load from server without page refresh or data asynchroonised on broswer with page refresh or reload there we used ajax .
+ 
+ javascript : javascript is used to load dynamic content using its events 
+ 
+ xml : xtensible markup language and iot is used to load a data from server 
+
+  ajax with jquery : 
+
+     a) load jquery CDN
+     b) ajax code in jquery 
+     c) run ajax on any server
+
+     
+      

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/subtotal.js'></script>
+</head>
+<body>
+
+    <table align="center">
+        <tr>
+            <th>View Cart(1)</th>
+        </tr>
+        <tr>
+            <th>#</th>
+            <th>pname</th>
+            <th>photo</th>
+            <th>price</th>
+            <th>qty</th>
+            <th>descriptions</th>
+            <th>Action</th>
+            
+        </tr>
+
+        <tr align="center">
+            <td>1001</td>
+            <td>addidas shoes</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHH8Dv5ZpjcTlXyLW7eLKKi5SeTVppn9QgqgVNGCI6CkeTo8HDXpJQGd6gWnVlqThw3GQ&usqp=CAU" width="95px"  height="95px"></td>
+            <td><input type="number" id="qty" value="1" min="1" max="5" onchange="sbtot()"></td>
+            <td><input type="text" id="price" value="5500" readonly style="border: none; width:45px"></td>
+            <td>ver nice products</td>
+            <td><a href="#">Delete</a></td>
+        </tr>
+
+        <tr>
+
+            <td colspan="7" align="right"><h2 style="padding: 8px; background-color: black; width: 50%; color:white">Subotal Rs. <label id="tot">5500</label></h2></td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>

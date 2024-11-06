@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="demo"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt accusamus corporis quasi alias ullam commodi reiciendis, quidem magnam, perspiciatis maiores ipsa laboriosam exercitationem eveniet nobis vel facere quis eius quam.</div> 
+    <button type="button" id="btnClk">Click Me!</button>
+    <script>
+     const demo=document.querySelector("#demo");
+     const btnClk=document.querySelector("#btnClk");
+     
+     btnClk.addEventListener("click",function(){
+        demo.style.width="50%";
+        demo.style.height="auto";
+        demo.style.margin="auto";
+        demo.style.padding="25px";
+        demo.style.backgroundColor="aqua";
+        demo.style.transition="2s ease all";
+     })
+
+    </script>
+</body>
+</html> 
